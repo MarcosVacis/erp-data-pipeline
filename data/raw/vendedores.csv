@@ -1,0 +1,16 @@
+id_vendedor,nome_vendedor,estado,canal_venda
+1,Vendedor 01,RJ,Interno
+2,Vendedor 02,PR,Interno
+3,Vendedor 03,PR,Interno
+4,Vendedor 04,SC,Externo
+5,Vendedor 05,PR,Interno
+6,Vendedor 06,PR,Interno
+7,Vendedor 07,PR,Interno
+8,Vendedor 08,RJ,Interno
+9,Vendedor 09,PR,Interno
+10,Vendedor 10,MG,Interno
+11,Vendedor 11,PR,Externo
+12,Vendedor 12,SC,Interno
+13,Vendedor 13,PR,Externo
+14,Vendedor 14,RJ,Externo
+15,Vendedor 15,MG,Externo

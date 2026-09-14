@@ -1,0 +1,41 @@
+id_produto,nome_produto,id_categoria,custo_unitario,preco_tabela,status
+1,Smartphone,1,1687.18,2039.04,Ativo
+2,Tablet,1,1075.23,1363.08,Ativo
+3,Smart TV,1,1409.31,1741.35,Inativo
+4,Monitor,1,340.04,412.83,Inativo
+5,Camera,1,270.22,381.81,Ativo
+6,Notebook,2,1424.12,1713.65,Ativo
+7,Teclado,2,194.82,241.41,Inativo
+8,Mouse,2,1687.79,2292.95,Ativo
+9,SSD,2,120.34,145.72,Ativo
+10,Memoria RAM,2,259.11,308.63,Inativo
+11,Mesa,3,1721.82,2412.82,Ativo
+12,Cadeira,3,438.54,568.55,Ativo
+13,Armario,3,179.14,211.85,Ativo
+14,Estante,3,1211.09,1542.08,Ativo
+15,Gaveteiro,3,1470.08,1757.7,Ativo
+16,Geladeira,4,216.38,269.92,Ativo
+17,Microondas,4,242.7,338.33,Ativo
+18,Liquidificador,4,1650.77,2383.15,Ativo
+19,Air Fryer,4,679.69,825.94,Inativo
+20,Aspirador,4,1580.72,2122.46,Ativo
+21,Cabo USB,5,577.98,813.36,Ativo
+22,Carregador,5,921.33,1087.89,Ativo
+23,Hub USB,5,162.2,222.91,Ativo
+24,Suporte,5,811.6,980.61,Ativo
+25,Adaptador,5,730.35,995.59,Ativo
+26,Impressora,6,385.51,492.19,Inativo
+27,Scanner,6,524.27,744.67,Ativo
+28,Calculadora,6,709.38,886.94,Ativo
+29,Fragmentadora,6,1380.58,1964.91,Ativo
+30,Projetor,6,1408.58,1801.14,Ativo
+31,Garrafa,7,262.76,360.74,Ativo
+32,Organizador,7,501.4,712.51,Ativo
+33,Lixeira,7,662.78,945.76,Ativo
+34,Filtro,7,251.56,324.74,Ativo
+35,Extensao,7,944.57,1255.81,Ativo
+36,Fone,8,1205.89,1462.33,Ativo
+37,Caixa de Som,8,530.68,740.97,Ativo
+38,Soundbar,8,802.32,997.64,Ativo
+39,Microfone,8,1513.08,2038.45,Inativo
+40,Headset,8,1510.42,2115.73,Ativo
