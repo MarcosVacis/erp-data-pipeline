@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 
-from utils.utils import (
+from laboratorio2.utils.utils import (
     tipagem_dados,
     padronizar_colunas,
     remover_duplicados

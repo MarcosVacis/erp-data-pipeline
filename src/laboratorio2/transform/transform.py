@@ -1,10 +1,10 @@
-from transform.categorias import transformar_categorias
-from transform.clientes import transformar_cliente
-from transform.faturamento import transformar_faturamento
-from transform.itens_pedido import transformar_itens_pedidos
-from transform.pedidos import transformar_pedidos
-from transform.produtos import transformar_produtos
-from transform.vendedores import transformar_vendedores
+from laboratorio2.transform.categorias import transformar_categorias
+from laboratorio2.transform.clientes import transformar_cliente
+from laboratorio2.transform.faturamento import transformar_faturamento
+from laboratorio2.transform.itens_pedido import transformar_itens_pedidos
+from laboratorio2.transform.pedidos import transformar_pedidos
+from laboratorio2.transform.produtos import transformar_produtos
+from laboratorio2.transform.vendedores import transformar_vendedores
 
 import logging
 

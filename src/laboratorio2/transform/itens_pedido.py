@@ -1,5 +1,5 @@
 import pandas as pd
-from utils.utils import (
+from laboratorio2.utils.utils import (
     remover_duplicados,
 )
 

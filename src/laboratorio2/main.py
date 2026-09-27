@@ -1,7 +1,7 @@
 import logging
 
-from extract.extract import extradir_dados, carregar_dados
-from transform.transform import executar_transfomacoes
+from laboratorio2.extract.extract import extradir_dados, carregar_dados
+from laboratorio2.transform.transform import executar_transfomacoes
 
 
 def main():
