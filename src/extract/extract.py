@@ -31,13 +31,13 @@ def extradir_dados () -> dict:
 
 
     dados_bruto = {
-        "categoria": carregar_dados(DIR_RAW / "categoria.csv"),
+        "categoria": carregar_dados(DIR_RAW / "categorias.csv"),
         "cliente": carregar_dados(DIR_RAW / "clientes.csv"),
-        "faturamento": carregar_dados(DIR_RAW / "faturamento.csv"),
+        "faturamento": carregar_dados(DIR_RAW / "faturamentos.csv"),
         "itens_pedido": carregar_dados(DIR_RAW / "itens_pedido.csv"),
         "pedidos": carregar_dados(DIR_RAW / "pedidos.csv"),
-        "produtos": carregar_dados(DIR_RAW / "produtoss.csv"),
-        "vendedores": carregar_dados(DIR_RAW / "vendedors.csv")
+        "produtos": carregar_dados(DIR_RAW / "produtos.csv"),
+        "vendedores": carregar_dados(DIR_RAW / "vendedores.csv")
     
     }
 

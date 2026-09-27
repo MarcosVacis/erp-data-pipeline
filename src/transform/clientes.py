@@ -2,7 +2,7 @@ import pandas as pd
 import logging
 from datetime import datetime
 
-from transform.transform import(
+from utils.utils import(
 tipagem_dados,
 padronizar_colunas,
 remover_duplicados
@@ -13,10 +13,11 @@ logger = logging.getLogger(__name__)
 
 def transformar_cliente (df: pd.DataFrame) -> pd.DataFrame:
     try:
+        df = df.copy()
         logger.info("Iniciando a trasnformacao de clientes. Registros: %d", len(df))
 
         df = tipagem_dados(
-            df, {"data_cadastro": "datetime64[ns]"}
+            df, {"data_cadastro":"datetime"}
         )
 
         registro_antes = len(df)

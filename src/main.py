@@ -1,14 +1,21 @@
 import logging
 
-from extract.extract import(carregar_clientes)
-
-def main ():
-    logging.basicConfig(level= logging.INFO, format="%(Asctime) s - %(levelname)s- %(message)s")
+from extract.extract import extradir_dados, carregar_dados
+from transform.transform import executar_transfomacoes
 
 
-dados = carregar_clientes()
+def main():
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s"
+    )
 
-print(dados)
+    dados = extradir_dados()
+
+    clientes = dados['cliente']
+
+    print(clientes)
+
 
 if __name__ == "__main__":
-    main
+    main()
