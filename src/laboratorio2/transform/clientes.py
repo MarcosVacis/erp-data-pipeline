@@ -28,7 +28,7 @@ def transformar_cliente (df: pd.DataFrame) -> pd.DataFrame:
 
         logger.info("Duplicados de clientes removidos: %d", registro_antes - len(df))
 
-        df = padronizar_colunas(df, ["nome_cliente", "status"])
+        df = padronizar_colunas(df, ["nome_cliente", "status", "estado"])
 
         logger.info("Transfomacoes de clientes concluidas. Registros: %d", len(df))
 

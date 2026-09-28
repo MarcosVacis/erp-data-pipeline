@@ -32,7 +32,7 @@ def executar_transfomacoes(
         "categorias": categorias_tratadas,
         "clientes": clientes_tratados,
         "faturamento": faturamento_tratados,
-        "itens_pedido": itens_pedidos_tratados,
+        "itens_pedidos": itens_pedidos_tratados,
         "pedidos": pedidos_tratados,
         "produtos": produtos_tratados,
         "vendedores": vendedores_tratados

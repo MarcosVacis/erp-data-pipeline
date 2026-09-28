@@ -31,3 +31,12 @@ def padronizar_colunas (df: pd.DataFrame, colunas: list[str]) -> pd.DataFrame:
     for coluna in colunas:
         df [coluna] = df[coluna].str.strip().str.title()
     return df
+
+
+def remover_prefixo_nf(valor) -> int | None:
+    if valor is None:
+        return None
+
+    valor = str(valor).strip()
+
+    return int(valor.replace("NF", ""))
