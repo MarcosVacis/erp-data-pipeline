@@ -10,11 +10,25 @@ def main():
         format="%(asctime)s - %(levelname)s - %(message)s"
     )
 
-    dados = extradir_dados()
+    try:
+        dados = extradir_dados()
+        logging.info("Dados extraídos com sucesso!")
 
-    clientes = dados['cliente']
+    except Exception:
+        logging.exception("Falha ao extrair os dados!")
+        raise
 
-    print(clientes)
+    dados_transformados = executar_transfomacoes(
+        categorias=dados["categoria"],
+        clientes=dados["cliente"],
+        faturamento=dados["faturamento"],
+        itens_pedidos=dados["itens_pedido"],
+        pedidos=dados["pedidos"],
+        produtos=dados["produtos"],
+        vendedores=dados["vendedores"]
+    )
+
+    print(dados_transformados)
 
 
 if __name__ == "__main__":

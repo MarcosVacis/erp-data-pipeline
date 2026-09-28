@@ -17,21 +17,20 @@ def transformar_faturamento (df: pd.DataFrame) -> pd.DataFrame:
 
         df = tipagem_dados(
             df, {
-                "numero_nf": int,
+                "numero_nf": str,
                 "data_faturamento": "datetime"
-
             })
 
         registro_antes = len(df)
 
         df = remover_duplicados (
-            df, ["numero-nf", "id_pedido"]
+            df, ["numero_nf", "id_pedido"]
         )
 
         logger.info("Duplicados de faturamento removidos: %d", registro_antes - len(df))
 
         df = padronizar_colunas(
-            df, ["forma_pagament", "status-faturamento"])
+            df, ["forma_pagamento", "status_faturamento"])
 
         logger.info("Transformacoes de faturamento concluidas. Registros: %d", len(df))
 

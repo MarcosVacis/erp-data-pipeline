@@ -14,8 +14,6 @@ def transformar_produtos (df: pd.DataFrame) -> pd.DataFrame:
         df = df.copy()
         logging.info("Iniciando transformacoes dos produtos: Registros: %d", len(df))
 
-        df = tipagem_dados(
-            df, {"data_pedido": "datetime"})
 
         registro_antes = len(df)
 
@@ -34,7 +32,7 @@ def transformar_produtos (df: pd.DataFrame) -> pd.DataFrame:
         return df 
 
     except Exception:
-        logger.exception("Erro ao transformar dados dos prdutos")
+        logger.exception("Erro ao transformar dados dos produtos")
         raise
     
 
