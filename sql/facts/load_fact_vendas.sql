@@ -1,3 +1,4 @@
+BEGIN;
 INSERT INTO dw.fact_vendas (
     id_pedido,
     id_item,
@@ -13,6 +14,7 @@ INSERT INTO dw.fact_vendas (
     valor_liquido,
     custo_unitario
 )
+SELECT  * FROM (
 SELECT
     p.ID_PEDIDO,
     i.ID_ITEM,
@@ -22,7 +24,7 @@ SELECT
     v.vendedor_sk,
     i.QUANTIDADE,
     i.PRECO_UNITARIO,
-    i.DESCONTO_PERC,
+    i.DESCONTO_PERCENTUAL,
     i.VALOR_BRUTO,
     i.VALOR_DESCONTO,
     i.VALOR_LIQUIDO,
@@ -35,4 +37,11 @@ JOIN dw.dim_cliente c
 JOIN dw.dim_produto pr
     ON pr.id_produto = i.ID_PRODUTO
 JOIN dw.dim_vendedor v
-    ON v.id_vendedor = p.ID_VENDEDOR;
+    ON v.id_vendedor = p.ID_VENDEDOR)
+TB
+WHERE NOT EXISTS(
+    SELECT  1 FROM dw.fact_vendas ft
+    where ft.id_item = tb.id_pedido
+    and ft.id_item = tb.id_pedido
+);
+COMMIT;
